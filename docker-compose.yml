@@ -1,0 +1,11 @@
+version: "3.7"
+services:
+  app:
+    image: template/ubuntu:1.0.0
+    build:
+      context: ./docker
+      dockerfile: Dockerfile
+      args:
+        buildno: 1
+    env_file:
+      - ./.env
