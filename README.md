@@ -10,7 +10,7 @@ docker-compose run --rm app
 shell
 ```
 docker-machine start
-docker-machine env | eval
+docker-machine env | eval $(cat)
 docker-compose run --rm app
 ```
 
